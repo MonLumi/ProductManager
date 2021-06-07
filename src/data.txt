@@ -1,0 +1,4 @@
+ID        TITLE               QUANTITY            PRICE               
+---------------------
+13;       Chewing gum;        50;                 2.0                 
+50;       Gao te;             20;                 50.0                

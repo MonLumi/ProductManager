@@ -32,4 +32,5 @@ public class Node implements IDisplay{
     public void display() {
         product.display();
     }
+
 }

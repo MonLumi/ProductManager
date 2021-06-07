@@ -1,11 +1,78 @@
+import java.io.*;
 import java.util.Scanner;
 
-
-//Dang lam do phan khoi tao LinkedList
 public class Main {
     static Scanner keyboard = new Scanner(System.in);
+    static LinkedList linkedList = new LinkedList();
 
-    public static void main(String[] args) {
+    static File file = new File("src/data.txt");
+
+    public static void importData(LinkedList linkedList, boolean isQueue) throws IOException {
+        BufferedReader reader = new BufferedReader(new FileReader(file));
+
+        reader.readLine();
+        reader.readLine();
+        String rawLine = reader.readLine();
+        while (rawLine != null) {
+            //convert lines of String to product field
+            String[] data = rawLine.split(";");
+            int id = Integer.parseInt(data[0].strip());
+            String title = data[1].strip();
+            int quantity = Integer.parseInt(data[2].strip());
+            double price = Double.parseDouble(data[3].strip());
+
+            if (isQueue) { // queue
+                linkedList.addTail(new Product(id,title,quantity,price));
+            } else { // stack
+                linkedList.addHead(new Product(id, title, quantity, price));
+            }
+            rawLine = reader.readLine();
+        }
+
+        reader.close();
+    }
+
+    static void exportProduct(Product product) throws IOException {
+        BufferedWriter writer = new BufferedWriter(new FileWriter(file, true));
+
+        int id = product.getId();
+        String title = product.getTitle();
+        int quantity = product.getQuantity();
+        double price = product.getPrice();
+
+        //Convert to one line and write to file
+        String txtFormat = String.format("%-10s%-20s%-20s%-20s", id + ";", title + ";", quantity +";", price);
+        writer.append(txtFormat);
+        writer.newLine();
+
+        writer.close();
+    }
+
+    static void exportAll() throws IOException {
+        BufferedWriter writer = new BufferedWriter(new FileWriter(file));
+
+        writer.write(String.format("%-10s%-20s%-20s%-20s", "ID", "TITLE", "QUANTITY", "PRICE"));
+        writer.newLine();
+        writer.append("---------------------");
+        writer.newLine();
+        Node node = linkedList.getHead();
+        while (node != null) {
+            int id = node.getProduct().getId();
+            String title = node.getProduct().getTitle();
+            int quantity = node.getProduct().getQuantity();
+            double price = node.getProduct().getPrice();
+
+            //Convert to one line and write to file
+            String txtFormat = String.format("%-10s%-20s%-20s%-20s", id + ";", title + ";", quantity +";", price);
+            writer.append(txtFormat);
+            writer.newLine();
+
+            node = node.getNext();
+        }
+        writer.close();
+    }
+
+    public static void main(String[] args) throws IOException {
         int choice;
         do {
             menu();
@@ -14,16 +81,43 @@ public class Main {
                 case 0 -> {}
 
                 //Import data to linked list and display
-                case 1 -> {}
+                case 1 -> {
+                    linkedList.clear();
+
+                    importData(linkedList, true);
+
+                    linkedList.display();
+                }
 
                 //Add a new product to tail
-                case 2 -> {}
+                case 2 -> {
+                    int isRepeat;
+                    do {
+                        System.out.print("ID: ");
+                        int id = Integer.parseInt(keyboard.nextLine());
+                        System.out.print("Title: ");
+                        String title = keyboard.nextLine();
+                        System.out.print("Quantity: ");
+                        int quantity = Integer.parseInt(keyboard.nextLine());
+                        System.out.print("Price: ");
+                        double price = Double.parseDouble(keyboard.nextLine());
+
+                        Product newProduct = new Product(id, title, quantity, price);
+
+                        linkedList.addTail(newProduct);
+                        exportProduct(newProduct);
+                        System.out.print("Do you want to add another product? (\"1\" for yes): ");
+                        isRepeat = Integer.parseInt(keyboard.nextLine());
+                    } while (1 == isRepeat);
+                }
 
                 //Visit all product and display info
-                case 3 -> {}
+                case 3 -> linkedList.display();
 
                 //Export data to file
-                case 4 -> {}
+                case 4 -> {
+                    exportAll();
+                 }
 
                 //Search product by ID
                 case 5 -> {}
@@ -82,4 +176,6 @@ public class Main {
     static void columnsSplit (String s1, String s2) {
         System.out.printf("%-50s%s%n", s1, s2);
     }
+
+
 }
