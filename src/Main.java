@@ -7,7 +7,7 @@ public class Main {
 
     static File file = new File("src/data.txt");
 
-    public static void importData(LinkedList linkedList, boolean isQueue) throws IOException {
+    public static void importData(LinkedList destination, boolean isQueue) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(file));
 
         reader.readLine();
@@ -22,9 +22,9 @@ public class Main {
             double price = Double.parseDouble(data[3].strip());
 
             if (isQueue) { // queue
-                linkedList.addTail(new Product(id,title,quantity,price));
+                destination.addTail(new Product(id,title,quantity,price));
             } else { // stack
-                linkedList.addHead(new Product(id, title, quantity, price));
+                destination.addHead(new Product(id, title, quantity, price));
             }
             rawLine = reader.readLine();
         }
@@ -85,7 +85,7 @@ public class Main {
                     linkedList.clear();
 
                     importData(linkedList, true);
-
+                    resultHeader();
                     linkedList.display();
                 }
 
@@ -106,6 +106,11 @@ public class Main {
 
                         linkedList.addTail(newProduct);
                         exportProduct(newProduct);
+                        lineBreak();
+                        System.out.println("Add new product successfully");
+                        newProduct.display();
+                        System.out.println();
+
                         System.out.print("Do you want to add another product? (\"1\" for yes): ");
                         isRepeat = Integer.parseInt(keyboard.nextLine());
                     } while (1 == isRepeat);
@@ -115,27 +120,57 @@ public class Main {
                 case 3 -> linkedList.display();
 
                 //Export data to file
-                case 4 -> {
-                    exportAll();
-                 }
+                case 4 -> exportAll();
 
                 //Search product by ID
-                case 5 -> {}
+                case 5 -> {
+                    int isRepeat;
+                    do {
+                        Tools.search();
+                        System.out.print("Do you want to search another product? (\"1\" for yes): ");
+                        isRepeat = Integer.parseInt(keyboard.nextLine());
+                    } while (1 == isRepeat);
+                }
 
                 //Delete product by ID
-                case 6 -> {}
+                case 6 -> {
+                    int isRepeat;
+                    do {
+                        Tools.delete();
+                        System.out.print("Do you want to delete another product? (\"1\" for yes): ");
+                        isRepeat = Integer.parseInt(keyboard.nextLine());
+                    } while (1 == isRepeat);
+                }
 
                 //Sort by ID
-                case 7 -> {}
+                case 7 -> {
+
+                }
 
                 //Convert to binary
-                case 8 -> {}
+                case 8 -> {
+                    System.out.println("The first product: ");
+                    Product product = linkedList.getHead().getProduct();
+                    product.display();
+                    System.out.print("The quantity in the Binary Number: ");
+                    System.out.println(Tools.convertToBinary(product.getQuantity()));
+                }
 
                 //Import to stack
-                case 9 -> {}
+                case 9 -> {
+                    LinkedList linkedStack = new LinkedList();
+                    importData(linkedStack, false);
+
+                    linkedStack.display();
+                }
 
                 //Import to queue
-                case 10 -> {}
+                case 10 -> {
+                    LinkedList linkedQueue = new LinkedList();
+                    importData(linkedQueue, true);
+
+                    linkedQueue.display();
+                }
                 default -> System.out.println("Your choice is not correct, please try again!");
             }
 
@@ -163,7 +198,8 @@ public class Main {
                 "8. Convert first quantity to Binary number");
         columnsSplit("4. Output data",
                 "9. Import data to stack");
-        columnsSplit("5. Search a product via ID","10. Import data to queue");
+        columnsSplit("5. Search a product via ID",
+                "10. Import data to queue");
 
         System.out.printf("%-25s","");
         lineBreak();
@@ -177,5 +213,8 @@ public class Main {
         System.out.printf("%-50s%s%n", s1, s2);
     }
 
+    static void resultHeader() {
+        System.out.printf("%-10s%-20s%-20s%-20s%n", "ID", "TITLE", "QUANTITY", "PRICE");
+    }
 
 }
