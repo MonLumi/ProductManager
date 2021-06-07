@@ -108,6 +108,7 @@ public class Main {
                         exportProduct(newProduct);
                         lineBreak();
                         System.out.println("Add new product successfully");
+                        resultHeader();
                         newProduct.display();
                         System.out.println();
 
@@ -151,6 +152,7 @@ public class Main {
                 case 8 -> {
                     System.out.println("The first product: ");
                     Product product = linkedList.getHead().getProduct();
+                    resultHeader();
                     product.display();
                     System.out.print("The quantity in the Binary Number: ");
                     System.out.println(Tools.convertToBinary(product.getQuantity()));
