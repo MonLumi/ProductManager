@@ -87,12 +87,17 @@ public class Main {
                     importData(linkedList, true);
                     resultHeader();
                     linkedList.display();
+                    lineBreak();
+                    System.out.println("Import data successful");
+                    System.out.println();
                 }
 
                 //Add a new product to tail
                 case 2 -> {
                     int isRepeat;
                     do {
+                        System.out.println("Adding new product");
+                        lineBreak();
                         System.out.print("ID: ");
                         int id = Integer.parseInt(keyboard.nextLine());
                         System.out.print("Title: ");
@@ -106,7 +111,7 @@ public class Main {
 
                         linkedList.addTail(newProduct);
                         exportProduct(newProduct);
-                        lineBreak();
+                        System.out.println();
                         System.out.println("Add new product successfully");
                         resultHeader();
                         newProduct.display();
@@ -114,14 +119,30 @@ public class Main {
 
                         System.out.print("Do you want to add another product? (\"1\" for yes): ");
                         isRepeat = Integer.parseInt(keyboard.nextLine());
+                        System.out.println();
                     } while (1 == isRepeat);
                 }
 
                 //Visit all product and display info
-                case 3 -> linkedList.display();
+                case 3 -> {
+                    resultHeader();
+                    linkedList.display();
+                    lineBreak();
+                }
 
                 //Export data to file
-                case 4 -> exportAll();
+                case 4 -> {
+                    if (linkedList.isEmpty()) {
+                        System.out.println("There are no data to export! Please import data first");
+                    } else {
+                        exportAll();
+                        resultHeader();
+                        linkedList.display();
+                        lineBreak();
+                        System.out.println("Export data successful");
+                        System.out.println();
+                    }
+                }
 
                 //Search product by ID
                 case 5 -> {
@@ -145,7 +166,13 @@ public class Main {
 
                 //Sort by ID
                 case 7 -> {
+                    Tools.quickSort(linkedList.getHead(), linkedList.getTail());
 
+                    resultHeader();
+                    linkedList.display();
+                    lineBreak();
+                    System.out.println("Data is successfully sorted!");
+                    System.out.println();
                 }
 
                 //Convert to binary
@@ -154,8 +181,10 @@ public class Main {
                     Product product = linkedList.getHead().getProduct();
                     resultHeader();
                     product.display();
+                    lineBreak();
                     System.out.print("The quantity in the Binary Number: ");
                     System.out.println(Tools.convertToBinary(product.getQuantity()));
+                    System.out.println();
                 }
 
                 //Import to stack
@@ -163,7 +192,9 @@ public class Main {
                     LinkedList linkedStack = new LinkedList();
                     importData(linkedStack, false);
 
+                    resultHeader();
                     linkedStack.display();
+                    lineBreak();
                 }
 
                 //Import to queue
@@ -171,17 +202,24 @@ public class Main {
                     LinkedList linkedQueue = new LinkedList();
                     importData(linkedQueue, true);
 
+                    resultHeader();
                     linkedQueue.display();
+                    lineBreak();
                 }
-                default -> System.out.println("Your choice is not correct, please try again!");
+                default -> {
+                    System.out.println("Your choice is not correct, please try again!");
+                    System.out.println();
+                }
             }
 
-            if (0 == choice) break;
-            if (choice <= 10) {
-                System.out.print("Back to main menu? (\"1\" for yes): ");
-                choice = Integer.parseInt(keyboard.nextLine());
-            } else choice = 1;
-        } while (choice == 1);
+            if (choice == 2 || choice == 5 || choice == 6 || choice >10) {
+                choice = 1;
+            } else if (choice != 0){
+                System.out.print("Press Enter to go to Main Menu");
+                keyboard.nextLine();
+                choice = 1;
+            }
+        } while (choice != 0);
         lineBreak();
         System.out.println("Good bye");
     }
@@ -192,6 +230,7 @@ public class Main {
         System.out.printf("%-25s","");
         lineBreak();
 
+        System.out.println("0. Exit");
         columnsSplit("1. Input data",
                 "6. Delete a product via ID");
         columnsSplit("2. Add a new product",
@@ -205,7 +244,7 @@ public class Main {
 
         System.out.printf("%-25s","");
         lineBreak();
-        System.out.print("Your choice (\"0\" for exit): ");
+        System.out.print("Your choice: ");
     }
 
     static void lineBreak() {
@@ -217,6 +256,7 @@ public class Main {
 
     static void resultHeader() {
         System.out.printf("%-10s%-20s%-20s%-20s%n", "ID", "TITLE", "QUANTITY", "PRICE");
+        lineBreak();
     }
 
 }

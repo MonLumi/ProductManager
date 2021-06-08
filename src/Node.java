@@ -2,6 +2,8 @@ public class Node implements IDisplay{
     private Product product;
     private Node next;
 
+    public Node() {}
+
     public Node (Product product) {
         this.product = product;
         next = null;
@@ -33,4 +35,7 @@ public class Node implements IDisplay{
         product.display();
     }
 
+    public int getID() {
+        return product.getId();
+    }
 }
