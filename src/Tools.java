@@ -7,6 +7,7 @@ public class Tools {
     public static void search() {
         System.out.print("Type ID: ");
         int id = Integer.parseInt(keyboard.nextLine());
+        Main.fileOut.append(String.valueOf(id)).append("(user input)\n\n");
         System.out.println();
         Node node = list.getHead();
         boolean isExist = false;
@@ -30,6 +31,7 @@ public class Tools {
     public static void delete() {
         System.out.print("Type ID: ");
         int id = Integer.parseInt(keyboard.nextLine());
+        Main.fileOut.append(String.valueOf(id)).append("(user input)\n\n");
         Node node = list.getHead();
         Node deletedNode = null;
         boolean isExist = false;

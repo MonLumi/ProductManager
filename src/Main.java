@@ -1,11 +1,22 @@
 import java.io.*;
 import java.util.Scanner;
+import java.io.IOException;
 
 public class Main {
     static Scanner keyboard = new Scanner(System.in);
     static LinkedList linkedList = new LinkedList();
 
     static File file = new File("src/data.txt");
+
+    static PrintStream fileOut;
+
+    static {
+        try {
+            fileOut = new PrintStream("src/console_output.txt");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
 
     public static void importData(LinkedList destination, boolean isQueue) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(file));
@@ -73,10 +84,15 @@ public class Main {
     }
 
     public static void main(String[] args) throws IOException {
+        
+        MultiOut mo = new MultiOut(System.out, fileOut);
+        System.setOut(mo);
+
         int choice;
         do {
             menu();
             choice = Integer.parseInt(keyboard.nextLine());
+            fileOut.append(String.valueOf(choice)).append("(user input)\n\n");
             switch (choice) {
                 case 0 -> {}
 
@@ -99,13 +115,17 @@ public class Main {
                         System.out.println("Adding new product");
                         lineBreak();
                         System.out.print("ID: ");
-                        int id = Integer.parseInt(keyboard.nextLine());
+                        int id = Integer.parseInt(Main.keyboard.nextLine());
+                        fileOut.append(String.valueOf(id)).append("(user input)\n\n");
                         System.out.print("Title: ");
-                        String title = keyboard.nextLine();
+                        String title = Main.keyboard.nextLine();
+                        fileOut.append(title.concat("(user input)\n\n"));
                         System.out.print("Quantity: ");
-                        int quantity = Integer.parseInt(keyboard.nextLine());
+                        int quantity = Integer.parseInt(Main.keyboard.nextLine());
+                        fileOut.append(String.valueOf(quantity)).append("(user input)\n\n");
                         System.out.print("Price: ");
-                        double price = Double.parseDouble(keyboard.nextLine());
+                        double price = Double.parseDouble(Main.keyboard.nextLine());
+                        fileOut.append(String.valueOf(price)).append("(user input)\n\n");
 
                         Product newProduct = new Product(id, title, quantity, price);
 
@@ -118,7 +138,8 @@ public class Main {
                         System.out.println();
 
                         System.out.print("Do you want to add another product? (\"1\" for yes): ");
-                        isRepeat = Integer.parseInt(keyboard.nextLine());
+                        isRepeat = Integer.parseInt(Main.keyboard.nextLine());
+                        fileOut.append(String.valueOf(isRepeat)).append("(user input)\n\n");
                         System.out.println();
                     } while (1 == isRepeat);
                 }
@@ -150,7 +171,8 @@ public class Main {
                     do {
                         Tools.search();
                         System.out.print("Do you want to search another product? (\"1\" for yes): ");
-                        isRepeat = Integer.parseInt(keyboard.nextLine());
+                        isRepeat = Integer.parseInt(Main.keyboard.nextLine());
+                        fileOut.append(String.valueOf(isRepeat)).append("(user input)\n\n");
                     } while (1 == isRepeat);
                 }
 
@@ -160,7 +182,8 @@ public class Main {
                     do {
                         Tools.delete();
                         System.out.print("Do you want to delete another product? (\"1\" for yes): ");
-                        isRepeat = Integer.parseInt(keyboard.nextLine());
+                        isRepeat = Integer.parseInt(Main.keyboard.nextLine());
+                        fileOut.append(String.valueOf(isRepeat)).append("(user input)\n\n");
                     } while (1 == isRepeat);
                 }
 
@@ -216,10 +239,13 @@ public class Main {
                 choice = 1;
             } else if (choice != 0){
                 System.out.print("Press Enter to go to Main Menu");
-                keyboard.nextLine();
+                Main.keyboard.nextLine();
+                fileOut.append("\n\n");
                 choice = 1;
             }
         } while (choice != 0);
+
+
         lineBreak();
         System.out.println("Good bye");
     }
