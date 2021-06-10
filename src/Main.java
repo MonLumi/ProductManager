@@ -216,7 +216,13 @@ public class Main {
                     importData(linkedStack, false);
 
                     resultHeader();
-                    linkedStack.display();
+                    //Pop data, not peek
+                    Node top = linkedStack.getHead();
+                    while (top != null) {
+                        top.display();
+                        top = top.getNext();
+                        linkedStack.setHead(top);
+                    }
                     lineBreak();
                 }
 
@@ -226,7 +232,12 @@ public class Main {
                     importData(linkedQueue, true);
 
                     resultHeader();
-                    linkedQueue.display();
+                    Node deQueue = linkedQueue.getHead();
+                    while (deQueue != linkedQueue.getTail().getNext()) {
+                        deQueue.display();
+                        deQueue = deQueue.getNext();
+                        linkedQueue.setHead(deQueue);
+                    }
                     lineBreak();
                 }
                 default -> {

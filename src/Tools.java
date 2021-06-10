@@ -32,6 +32,7 @@ public class Tools {
         System.out.print("Type ID: ");
         int id = Integer.parseInt(keyboard.nextLine());
         Main.fileOut.append(String.valueOf(id)).append("(user input)\n\n");
+
         Node node = list.getHead();
         Node deletedNode = null;
         boolean isExist = false;
