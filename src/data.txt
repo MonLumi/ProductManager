@@ -17,4 +17,3 @@ ID        TITLE               QUANTITY            PRICE
 141;      Mam tom;            13;                 12.23               
 27;       Tao bac my;         40;                 27.22               
 157;      Tra;                25;                 47.23               
-13;       But chi;            30;                 10.0                

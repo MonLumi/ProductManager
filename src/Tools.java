@@ -33,25 +33,52 @@ public class Tools {
         int id = Integer.parseInt(keyboard.nextLine());
         Main.fileOut.append(String.valueOf(id)).append("(user input)\n\n");
 
-        Node node = list.getHead();
-        Node deletedNode = null;
-        boolean isExist = false;
+        boolean isExist;
+        Node key;
+        Node report;
 
-        while (node.getNext() != null) {
-            if (node.getNext().getProduct().getId() == id) {
-                deletedNode = node.getNext();
-                Node newNextNode = node.getNext().getNext();
-                node.setNext(newNextNode);
-                isExist = true;
-                break;
-            }
-            node = node.getNext();
+        //if the deleted product is head
+        if (list.getHead().getID() == id) {
+            isExist = true;
+            report = list.getHead();
+            list.setHead(list.getHead().getNext());
         }
+        // if the deleted product is tail
+        else if (list.getTail().getID() == id) {
+            isExist = true;
+            report = list.getTail();
+            key = list.getHead();
+            while (key.getNext() != list.getTail()) {
+                key = key.getNext();
+            }
+            key.setNext(null);
+            list.setTail(key);
+        }
+        // if the deleted product is middle list
+        else {
+            key = list.getHead();
+            Node prev = list.getHead();
+
+            //search for deleted product
+            while (key.getID() != id && key != list.getTail()) {
+                prev = key;
+                key = key.getNext();
+            }
+
+            if (key == list.getTail()) isExist = false;
+            else {
+                isExist = true;
+                prev.setNext(key.getNext());
+            }
+            report = key;
+        }
+
+
         System.out.println();
         if (isExist) {
             System.out.println("Successfully deleted the product: ");
             Main.resultHeader();
-            deletedNode.display();
+            report.display();
         } else System.out.println("Product not found!");
         System.out.println();
     }

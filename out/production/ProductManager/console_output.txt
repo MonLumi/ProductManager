@@ -42,23 +42,613 @@ Press Enter to go to Main Menu
 4. Output data                                    9. Import data to stack
 5. Search a product via ID                        10. Import data to queue
                          -----------------------
+Your choice: 6(user input)
+
+Type ID: 13(user input)
+
+
+Successfully deleted the product: 
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+13        Chewing gum         50                  2.0                 
+
+Do you want to delete another product? ("1" for yes): 2(user input)
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 3(user input)
+
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+50        Gao te              20                  50.0                
+1         Led                 300                 100.0               
+9         Socket              100                 20.0                
+3         Tape                30                  10.0                
+5         Glue                40                  10.0                
+48        Ot hiem             65                  3.0                 
+55        Dua leo baby        35                  17.5                
+172       Kho qua             33                  6.0                 
+26        Ca chua bi          35                  9.1                 
+102       Kem Vinamilk        3                   72.0                
+23        Bia Tiger           1000                24.5                
+176       Chanh               32                  5.6                 
+131       Chanh day           17                  3.23                
+141       Mam tom             13                  12.23               
+27        Tao bac my          40                  27.22               
+157       Tra                 25                  47.23               
+-----------------------
+Press Enter to go to Main Menu
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 7(user input)
+
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+1         Led                 300                 100.0               
+3         Tape                30                  10.0                
+5         Glue                40                  10.0                
+9         Socket              100                 20.0                
+23        Bia Tiger           1000                24.5                
+26        Ca chua bi          35                  9.1                 
+27        Tao bac my          40                  27.22               
+48        Ot hiem             65                  3.0                 
+50        Gao te              20                  50.0                
+55        Dua leo baby        35                  17.5                
+102       Kem Vinamilk        3                   72.0                
+131       Chanh day           17                  3.23                
+141       Mam tom             13                  12.23               
+157       Tra                 25                  47.23               
+172       Kho qua             33                  6.0                 
+176       Chanh               32                  5.6                 
+-----------------------
+Data is successfully sorted!
+
+Press Enter to go to Main Menu
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 1(user input)
+
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+13        Chewing gum         50                  2.0                 
+50        Gao te              20                  50.0                
+1         Led                 300                 100.0               
+9         Socket              100                 20.0                
+3         Tape                30                  10.0                
+5         Glue                40                  10.0                
+48        Ot hiem             65                  3.0                 
+55        Dua leo baby        35                  17.5                
+172       Kho qua             33                  6.0                 
+26        Ca chua bi          35                  9.1                 
+102       Kem Vinamilk        3                   72.0                
+23        Bia Tiger           1000                24.5                
+176       Chanh               32                  5.6                 
+131       Chanh day           17                  3.23                
+141       Mam tom             13                  12.23               
+27        Tao bac my          40                  27.22               
+157       Tra                 25                  47.23               
+-----------------------
+Import data successful
+
+Press Enter to go to Main Menu
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 6(user input)
+
+Type ID: 157(user input)
+
+
+Successfully deleted the product: 
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+157       Tra                 25                  47.23               
+
+Do you want to delete another product? ("1" for yes): 2(user input)
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 3(user input)
+
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+13        Chewing gum         50                  2.0                 
+50        Gao te              20                  50.0                
+1         Led                 300                 100.0               
+9         Socket              100                 20.0                
+3         Tape                30                  10.0                
+5         Glue                40                  10.0                
+48        Ot hiem             65                  3.0                 
+55        Dua leo baby        35                  17.5                
+172       Kho qua             33                  6.0                 
+26        Ca chua bi          35                  9.1                 
+102       Kem Vinamilk        3                   72.0                
+23        Bia Tiger           1000                24.5                
+176       Chanh               32                  5.6                 
+131       Chanh day           17                  3.23                
+141       Mam tom             13                  12.23               
+27        Tao bac my          40                  27.22               
+-----------------------
+Press Enter to go to Main Menu
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 7(user input)
+
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+1         Led                 300                 100.0               
+3         Tape                30                  10.0                
+5         Glue                40                  10.0                
+9         Socket              100                 20.0                
+13        Chewing gum         50                  2.0                 
+23        Bia Tiger           1000                24.5                
+26        Ca chua bi          35                  9.1                 
+27        Tao bac my          40                  27.22               
+48        Ot hiem             65                  3.0                 
+50        Gao te              20                  50.0                
+55        Dua leo baby        35                  17.5                
+102       Kem Vinamilk        3                   72.0                
+131       Chanh day           17                  3.23                
+141       Mam tom             13                  12.23               
+172       Kho qua             33                  6.0                 
+176       Chanh               32                  5.6                 
+-----------------------
+Data is successfully sorted!
+
+Press Enter to go to Main Menu
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 1(user input)
+
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+13        Chewing gum         50                  2.0                 
+50        Gao te              20                  50.0                
+1         Led                 300                 100.0               
+9         Socket              100                 20.0                
+3         Tape                30                  10.0                
+5         Glue                40                  10.0                
+48        Ot hiem             65                  3.0                 
+55        Dua leo baby        35                  17.5                
+172       Kho qua             33                  6.0                 
+26        Ca chua bi          35                  9.1                 
+102       Kem Vinamilk        3                   72.0                
+23        Bia Tiger           1000                24.5                
+176       Chanh               32                  5.6                 
+131       Chanh day           17                  3.23                
+141       Mam tom             13                  12.23               
+27        Tao bac my          40                  27.22               
+157       Tra                 25                  47.23               
+-----------------------
+Import data successful
+
+Press Enter to go to Main Menu
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 6(user input)
+
+Type ID: 176(user input)
+
+
+Successfully deleted the product: 
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+176       Chanh               32                  5.6                 
+
+Do you want to delete another product? ("1" for yes): 2(user input)
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 3(user input)
+
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+13        Chewing gum         50                  2.0                 
+50        Gao te              20                  50.0                
+1         Led                 300                 100.0               
+9         Socket              100                 20.0                
+3         Tape                30                  10.0                
+5         Glue                40                  10.0                
+48        Ot hiem             65                  3.0                 
+55        Dua leo baby        35                  17.5                
+172       Kho qua             33                  6.0                 
+26        Ca chua bi          35                  9.1                 
+102       Kem Vinamilk        3                   72.0                
+23        Bia Tiger           1000                24.5                
+131       Chanh day           17                  3.23                
+141       Mam tom             13                  12.23               
+27        Tao bac my          40                  27.22               
+157       Tra                 25                  47.23               
+-----------------------
+Press Enter to go to Main Menu
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 7(user input)
+
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+1         Led                 300                 100.0               
+3         Tape                30                  10.0                
+5         Glue                40                  10.0                
+9         Socket              100                 20.0                
+13        Chewing gum         50                  2.0                 
+23        Bia Tiger           1000                24.5                
+26        Ca chua bi          35                  9.1                 
+27        Tao bac my          40                  27.22               
+48        Ot hiem             65                  3.0                 
+50        Gao te              20                  50.0                
+55        Dua leo baby        35                  17.5                
+102       Kem Vinamilk        3                   72.0                
+131       Chanh day           17                  3.23                
+141       Mam tom             13                  12.23               
+157       Tra                 25                  47.23               
+172       Kho qua             33                  6.0                 
+-----------------------
+Data is successfully sorted!
+
+Press Enter to go to Main Menu
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 6(user input)
+
+Type ID: 55(user input)
+
+
+Successfully deleted the product: 
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+55        Dua leo baby        35                  17.5                
+
+Do you want to delete another product? ("1" for yes): 2(user input)
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 3(user input)
+
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+1         Led                 300                 100.0               
+3         Tape                30                  10.0                
+5         Glue                40                  10.0                
+9         Socket              100                 20.0                
+13        Chewing gum         50                  2.0                 
+23        Bia Tiger           1000                24.5                
+26        Ca chua bi          35                  9.1                 
+27        Tao bac my          40                  27.22               
+48        Ot hiem             65                  3.0                 
+50        Gao te              20                  50.0                
+102       Kem Vinamilk        3                   72.0                
+131       Chanh day           17                  3.23                
+141       Mam tom             13                  12.23               
+157       Tra                 25                  47.23               
+172       Kho qua             33                  6.0                 
+-----------------------
+Press Enter to go to Main Menu
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 1(user input)
+
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+13        Chewing gum         50                  2.0                 
+50        Gao te              20                  50.0                
+1         Led                 300                 100.0               
+9         Socket              100                 20.0                
+3         Tape                30                  10.0                
+5         Glue                40                  10.0                
+48        Ot hiem             65                  3.0                 
+55        Dua leo baby        35                  17.5                
+172       Kho qua             33                  6.0                 
+26        Ca chua bi          35                  9.1                 
+102       Kem Vinamilk        3                   72.0                
+23        Bia Tiger           1000                24.5                
+176       Chanh               32                  5.6                 
+131       Chanh day           17                  3.23                
+141       Mam tom             13                  12.23               
+27        Tao bac my          40                  27.22               
+157       Tra                 25                  47.23               
+-----------------------
+Import data successful
+
+Press Enter to go to Main Menu
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 6(user input)
+
+Type ID: 55(user input)
+
+
+Successfully deleted the product: 
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+55        Dua leo baby        35                  17.5                
+
+Do you want to delete another product? ("1" for yes): 1(user input)
+
+Type ID: 27(user input)
+
+
+Successfully deleted the product: 
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+27        Tao bac my          40                  27.22               
+
+Do you want to delete another product? ("1" for yes): 2(user input)
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 7(user input)
+
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+1         Led                 300                 100.0               
+3         Tape                30                  10.0                
+5         Glue                40                  10.0                
+9         Socket              100                 20.0                
+13        Chewing gum         50                  2.0                 
+23        Bia Tiger           1000                24.5                
+26        Ca chua bi          35                  9.1                 
+48        Ot hiem             65                  3.0                 
+50        Gao te              20                  50.0                
+102       Kem Vinamilk        3                   72.0                
+131       Chanh day           17                  3.23                
+141       Mam tom             13                  12.23               
+157       Tra                 25                  47.23               
+172       Kho qua             33                  6.0                 
+176       Chanh               32                  5.6                 
+-----------------------
+Data is successfully sorted!
+
+Press Enter to go to Main Menu
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 1(user input)
+
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+13        Chewing gum         50                  2.0                 
+50        Gao te              20                  50.0                
+1         Led                 300                 100.0               
+9         Socket              100                 20.0                
+3         Tape                30                  10.0                
+5         Glue                40                  10.0                
+48        Ot hiem             65                  3.0                 
+55        Dua leo baby        35                  17.5                
+172       Kho qua             33                  6.0                 
+26        Ca chua bi          35                  9.1                 
+102       Kem Vinamilk        3                   72.0                
+23        Bia Tiger           1000                24.5                
+176       Chanh               32                  5.6                 
+131       Chanh day           17                  3.23                
+141       Mam tom             13                  12.23               
+27        Tao bac my          40                  27.22               
+157       Tra                 25                  47.23               
+-----------------------
+Import data successful
+
+Press Enter to go to Main Menu
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 6(user input)
+
+Type ID: 13(user input)
+
+
+Successfully deleted the product: 
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+13        Chewing gum         50                  2.0                 
+
+Do you want to delete another product? ("1" for yes): 1(user input)
+
+Type ID: 55(user input)
+
+
+Successfully deleted the product: 
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+55        Dua leo baby        35                  17.5                
+
+Do you want to delete another product? ("1" for yes): 1(user input)
+
+Type ID: 157(user input)
+
+
+Successfully deleted the product: 
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+157       Tra                 25                  47.23               
+
+Do you want to delete another product? ("1" for yes): 2(user input)
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 7(user input)
+
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+1         Led                 300                 100.0               
+3         Tape                30                  10.0                
+5         Glue                40                  10.0                
+9         Socket              100                 20.0                
+23        Bia Tiger           1000                24.5                
+26        Ca chua bi          35                  9.1                 
+27        Tao bac my          40                  27.22               
+48        Ot hiem             65                  3.0                 
+50        Gao te              20                  50.0                
+102       Kem Vinamilk        3                   72.0                
+131       Chanh day           17                  3.23                
+141       Mam tom             13                  12.23               
+172       Kho qua             33                  6.0                 
+176       Chanh               32                  5.6                 
+-----------------------
+Data is successfully sorted!
+
+Press Enter to go to Main Menu
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
 Your choice: 2(user input)
 
 Adding new product
 -----------------------
-ID: 13(user input)
+ID: 222(user input)
 
-Title: But chi(user input)
+Title: 222(user input)
 
-Quantity: 30(user input)
+Quantity: 222(user input)
 
-Price: 10.0(user input)
+Price: 222.0(user input)
 
 
 Add new product successfully
 ID        TITLE               QUANTITY            PRICE               
 -----------------------
-13        But chi             30                  10.0                
+222       222                 222                 222.0               
 
 Do you want to add another product? ("1" for yes): 2(user input)
 
@@ -72,28 +662,25 @@ Do you want to add another product? ("1" for yes): 2(user input)
 4. Output data                                    9. Import data to stack
 5. Search a product via ID                        10. Import data to queue
                          -----------------------
-Your choice: 9(user input)
+Your choice: 3(user input)
 
 ID        TITLE               QUANTITY            PRICE               
 -----------------------
-13        But chi             30                  10.0                
-157       Tra                 25                  47.23               
-27        Tao bac my          40                  27.22               
-141       Mam tom             13                  12.23               
-131       Chanh day           17                  3.23                
-176       Chanh               32                  5.6                 
-23        Bia Tiger           1000                24.5                
-102       Kem Vinamilk        3                   72.0                
-26        Ca chua bi          35                  9.1                 
-172       Kho qua             33                  6.0                 
-55        Dua leo baby        35                  17.5                
-48        Ot hiem             65                  3.0                 
-5         Glue                40                  10.0                
-3         Tape                30                  10.0                
-9         Socket              100                 20.0                
 1         Led                 300                 100.0               
+3         Tape                30                  10.0                
+5         Glue                40                  10.0                
+9         Socket              100                 20.0                
+23        Bia Tiger           1000                24.5                
+26        Ca chua bi          35                  9.1                 
+27        Tao bac my          40                  27.22               
+48        Ot hiem             65                  3.0                 
 50        Gao te              20                  50.0                
-13        Chewing gum         50                  2.0                 
+102       Kem Vinamilk        3                   72.0                
+131       Chanh day           17                  3.23                
+141       Mam tom             13                  12.23               
+172       Kho qua             33                  6.0                 
+176       Chanh               32                  5.6                 
+222       222                 222                 222.0               
 -----------------------
 Press Enter to go to Main Menu
 
@@ -106,14 +693,63 @@ Press Enter to go to Main Menu
 4. Output data                                    9. Import data to stack
 5. Search a product via ID                        10. Import data to queue
                          -----------------------
-Your choice: 8(user input)
+Your choice: 7(user input)
 
-The first product: 
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+1         Led                 300                 100.0               
+3         Tape                30                  10.0                
+5         Glue                40                  10.0                
+9         Socket              100                 20.0                
+23        Bia Tiger           1000                24.5                
+26        Ca chua bi          35                  9.1                 
+27        Tao bac my          40                  27.22               
+48        Ot hiem             65                  3.0                 
+50        Gao te              20                  50.0                
+102       Kem Vinamilk        3                   72.0                
+131       Chanh day           17                  3.23                
+141       Mam tom             13                  12.23               
+172       Kho qua             33                  6.0                 
+176       Chanh               32                  5.6                 
+222       222                 222                 222.0               
+-----------------------
+Data is successfully sorted!
+
+Press Enter to go to Main Menu
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 1(user input)
+
 ID        TITLE               QUANTITY            PRICE               
 -----------------------
 13        Chewing gum         50                  2.0                 
+50        Gao te              20                  50.0                
+1         Led                 300                 100.0               
+9         Socket              100                 20.0                
+3         Tape                30                  10.0                
+5         Glue                40                  10.0                
+48        Ot hiem             65                  3.0                 
+55        Dua leo baby        35                  17.5                
+172       Kho qua             33                  6.0                 
+26        Ca chua bi          35                  9.1                 
+102       Kem Vinamilk        3                   72.0                
+23        Bia Tiger           1000                24.5                
+176       Chanh               32                  5.6                 
+131       Chanh day           17                  3.23                
+141       Mam tom             13                  12.23               
+27        Tao bac my          40                  27.22               
+157       Tra                 25                  47.23               
+222       222                 222                 222.0               
 -----------------------
-The quantity in the Binary Number: 110010
+Import data successful
 
 Press Enter to go to Main Menu
 
@@ -126,7 +762,182 @@ Press Enter to go to Main Menu
 4. Output data                                    9. Import data to stack
 5. Search a product via ID                        10. Import data to queue
                          -----------------------
-Your choice: 0(user input)
+Your choice: 2(user input)
 
+Adding new product
 -----------------------
-Good bye
+ID: 111(user input)
+
+Title: 111(user input)
+
+Quantity: 111(user input)
+
+Price: 111.0(user input)
+
+
+Add new product successfully
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+111       111                 111                 111.0               
+
+Do you want to add another product? ("1" for yes): 111(user input)
+
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 3(user input)
+
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+13        Chewing gum         50                  2.0                 
+50        Gao te              20                  50.0                
+1         Led                 300                 100.0               
+9         Socket              100                 20.0                
+3         Tape                30                  10.0                
+5         Glue                40                  10.0                
+48        Ot hiem             65                  3.0                 
+55        Dua leo baby        35                  17.5                
+172       Kho qua             33                  6.0                 
+26        Ca chua bi          35                  9.1                 
+102       Kem Vinamilk        3                   72.0                
+23        Bia Tiger           1000                24.5                
+176       Chanh               32                  5.6                 
+131       Chanh day           17                  3.23                
+141       Mam tom             13                  12.23               
+27        Tao bac my          40                  27.22               
+157       Tra                 25                  47.23               
+222       222                 222                 222.0               
+111       111                 111                 111.0               
+-----------------------
+Press Enter to go to Main Menu
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 6(user input)
+
+Type ID: 111(user input)
+
+
+Successfully deleted the product: 
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+111       111                 111                 111.0               
+
+Do you want to delete another product? ("1" for yes): 2(user input)
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 7(user input)
+
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+1         Led                 300                 100.0               
+3         Tape                30                  10.0                
+5         Glue                40                  10.0                
+9         Socket              100                 20.0                
+13        Chewing gum         50                  2.0                 
+23        Bia Tiger           1000                24.5                
+26        Ca chua bi          35                  9.1                 
+27        Tao bac my          40                  27.22               
+48        Ot hiem             65                  3.0                 
+50        Gao te              20                  50.0                
+55        Dua leo baby        35                  17.5                
+102       Kem Vinamilk        3                   72.0                
+131       Chanh day           17                  3.23                
+141       Mam tom             13                  12.23               
+157       Tra                 25                  47.23               
+172       Kho qua             33                  6.0                 
+176       Chanh               32                  5.6                 
+222       222                 222                 222.0               
+-----------------------
+Data is successfully sorted!
+
+Press Enter to go to Main Menu
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 6(user input)
+
+Type ID: 222(user input)
+
+
+Successfully deleted the product: 
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+222       222                 222                 222.0               
+
+Do you want to delete another product? ("1" for yes): 2(user input)
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 7(user input)
+
+ID        TITLE               QUANTITY            PRICE               
+-----------------------
+1         Led                 300                 100.0               
+3         Tape                30                  10.0                
+5         Glue                40                  10.0                
+9         Socket              100                 20.0                
+13        Chewing gum         50                  2.0                 
+23        Bia Tiger           1000                24.5                
+26        Ca chua bi          35                  9.1                 
+27        Tao bac my          40                  27.22               
+48        Ot hiem             65                  3.0                 
+50        Gao te              20                  50.0                
+55        Dua leo baby        35                  17.5                
+102       Kem Vinamilk        3                   72.0                
+131       Chanh day           17                  3.23                
+141       Mam tom             13                  12.23               
+157       Tra                 25                  47.23               
+172       Kho qua             33                  6.0                 
+176       Chanh               32                  5.6                 
+-----------------------
+Data is successfully sorted!
+
+Press Enter to go to Main Menu
+
+                         What do you want to do?
+                         -----------------------
+0. Exit
+1. Input data                                     6. Delete a product via ID
+2. Add a new product                              7. Sort all products by IDs
+3. Display all products                           8. Convert first quantity to Binary number
+4. Output data                                    9. Import data to stack
+5. Search a product via ID                        10. Import data to queue
+                         -----------------------
+Your choice: 

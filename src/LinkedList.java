@@ -1,4 +1,4 @@
-public class LinkedList {
+public class LinkedList implements IDisplay{
     private Node head;
     private Node tail;
 
@@ -47,11 +47,10 @@ public class LinkedList {
 
         if (isEmpty()) {
             head = node;
-            tail = node;
         } else {
             tail.setNext(node);
-            tail = node;
         }
+        tail = node;
     }
 
     public void clear() {

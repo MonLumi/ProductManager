@@ -9,11 +9,6 @@ public class Node implements IDisplay{
         next = null;
     }
 
-    public Node(Product product, Node next) {
-        this.product = product;
-        this.next = next;
-    }
-
     public Product getProduct() {
         return product;
     }
