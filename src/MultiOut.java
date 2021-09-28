@@ -28,12 +28,6 @@ public class MultiOut extends PrintStream {
     }
 
     @Override
-    public void writeBytes(byte[] buf) {
-        super.writeBytes(buf);
-        second.writeBytes(buf);
-    }
-
-    @Override
     public void flush() {
         super.flush();
         second.flush();

@@ -6,17 +6,8 @@ public class Main {
     static Scanner keyboard = new Scanner(System.in);
     static LinkedList linkedList = new LinkedList();
 
+    //Variable for data
     static File file = new File("src/data.txt");
-
-    static PrintStream fileOut;
-
-    static {
-        try {
-            fileOut = new PrintStream("src/console_output.txt");
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        }
-    }
 
     public static void importData(LinkedList destination, boolean isQueue) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader(file));
@@ -62,6 +53,7 @@ public class Main {
     static void exportAll() throws IOException {
         BufferedWriter writer = new BufferedWriter(new FileWriter(file));
 
+
         writer.write(String.format("%-10s%-20s%-20s%-20s", "ID", "TITLE", "QUANTITY", "PRICE"));
         writer.newLine();
         writer.append("---------------------");
@@ -83,8 +75,23 @@ public class Main {
         writer.close();
     }
 
+
+
+    //Variable for export console screen to txt file
+    static PrintStream fileOut;
+    static {
+        try {
+            fileOut = new PrintStream("src/console_output.txt");
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
+
+
     public static void main(String[] args) throws IOException {
         
+        //Change system default console-out to both console and file out
         MultiOut mo = new MultiOut(System.out, fileOut);
         System.setOut(mo);
 
@@ -94,10 +101,10 @@ public class Main {
             choice = Integer.parseInt(keyboard.nextLine());
             fileOut.append(String.valueOf(choice)).append("(user input)\n\n");
             switch (choice) {
-                case 0 -> {}
+                case 0 : break;
 
                 //Import data to linked list and display
-                case 1 -> {
+                case 1 :  {
                     linkedList.clear();
 
                     importData(linkedList, true);
@@ -106,10 +113,11 @@ public class Main {
                     lineBreak();
                     System.out.println("Import data successful");
                     System.out.println();
+                    break;
                 }
 
                 //Add a new product to tail
-                case 2 -> {
+                case 2 : {
                     int isRepeat;
                     do {
                         System.out.println("Adding new product");
@@ -142,17 +150,19 @@ public class Main {
                         fileOut.append(String.valueOf(isRepeat)).append("(user input)\n\n");
                         System.out.println();
                     } while (1 == isRepeat);
+                    break;
                 }
 
                 //Visit all product and display info
-                case 3 -> {
+                case 3 : {
                     resultHeader();
                     linkedList.display();
                     lineBreak();
+                    break;
                 }
 
                 //Export data to file
-                case 4 -> {
+                case 4 : {
                     if (linkedList.isEmpty()) {
                         System.out.println("There are no data to export! Please import data first");
                     } else {
@@ -163,10 +173,11 @@ public class Main {
                         System.out.println("Export data successful");
                         System.out.println();
                     }
+                    break;
                 }
 
                 //Search product by ID
-                case 5 -> {
+                case 5 :  {
                     int isRepeat;
                     do {
                         Tools.search();
@@ -174,10 +185,11 @@ public class Main {
                         isRepeat = Integer.parseInt(Main.keyboard.nextLine());
                         fileOut.append(String.valueOf(isRepeat)).append("(user input)\n\n");
                     } while (1 == isRepeat);
+                    break;
                 }
 
                 //Delete product by ID
-                case 6 -> {
+                case 6 :  {
                     int isRepeat;
                     do {
                         Tools.delete();
@@ -185,10 +197,11 @@ public class Main {
                         isRepeat = Integer.parseInt(Main.keyboard.nextLine());
                         fileOut.append(String.valueOf(isRepeat)).append("(user input)\n\n");
                     } while (1 == isRepeat);
+                    break;
                 }
 
                 //Sort by ID
-                case 7 -> {
+                case 7 :  {
                     Tools.quickSort(linkedList.getHead(), linkedList.getTail());
 
                     resultHeader();
@@ -196,10 +209,11 @@ public class Main {
                     lineBreak();
                     System.out.println("Data is successfully sorted!");
                     System.out.println();
+                    break;
                 }
 
                 //Convert to binary
-                case 8 -> {
+                case 8 :  {
                     System.out.println("The first product: ");
                     Product product = linkedList.getHead().getProduct();
                     resultHeader();
@@ -208,10 +222,11 @@ public class Main {
                     System.out.print("The quantity in the Binary Number: ");
                     System.out.println(Tools.convertToBinary(product.getQuantity()));
                     System.out.println();
+                    break;
                 }
 
                 //Import to stack
-                case 9 -> {
+                case 9 :  {
                     LinkedList linkedStack = new LinkedList();
                     importData(linkedStack, false);
 
@@ -224,10 +239,11 @@ public class Main {
                         linkedStack.setHead(top);
                     }
                     lineBreak();
+                    break;
                 }
 
                 //Import to queue
-                case 10 -> {
+                case 10 : {
                     LinkedList linkedQueue = new LinkedList();
                     importData(linkedQueue, true);
 
@@ -239,8 +255,9 @@ public class Main {
                         linkedQueue.setHead(deQueue);
                     }
                     lineBreak();
+                    break;
                 }
-                default -> {
+                default : {
                     System.out.println("Your choice is not correct, please try again!");
                     System.out.println();
                 }
